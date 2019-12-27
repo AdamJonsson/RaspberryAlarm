@@ -1,5 +1,6 @@
 {
   "name": "raspberry-alarm",
+  "homepage": "http://192.168.8.130/Project/RaspberryAlarm/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
