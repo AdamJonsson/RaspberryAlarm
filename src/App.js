@@ -1,9 +1,13 @@
 import React from 'react';
-import Sunrise from './components/sunrise/sunrise.js'
+import Sunrise from './components/sunrise/sunrise.js';
+import WakeSound from './components/sound.js';
 
 function App() {
   return (
-    <Sunrise/>
+    <div>
+      <Sunrise/>
+      <WakeSound/>
+    </div>
   );
 }
 
