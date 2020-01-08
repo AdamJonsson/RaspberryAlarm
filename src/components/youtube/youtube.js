@@ -8,7 +8,7 @@ class YouTubeVideo extends React.Component {
       this.video = this.props.id;//video id
       this.volume = 0;
       this.soundFadeStart = false;
-  
+
       window['onYouTubeIframeAPIReady'] = (e) => {
         this.YT = window['YT'];
         this.reframed = false;
@@ -45,13 +45,9 @@ class YouTubeVideo extends React.Component {
     }
 
     render() {
-      const style = `.max-width-1024 { max-width: 1024px; margin: 0 auto; display: none}`;
       return (
             <div>
-                <style>{style}</style>
-                <div className="max-width-1024">
-                    <div className="embed-responsive embed-responsive-16by9" id="player"></div>
-                </div>
+                  <div id="player"></div>
             </div>
       );
     }
