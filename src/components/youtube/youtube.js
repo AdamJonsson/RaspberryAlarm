@@ -8,7 +8,9 @@ class YouTubeVideo extends React.Component {
       this.video = this.props.id;//video id
       this.volume = 0;
       this.soundFadeStart = false;
+    }
 
+    componentDidMount() {
       window['onYouTubeIframeAPIReady'] = (e) => {
         this.YT = window['YT'];
         this.reframed = false;
